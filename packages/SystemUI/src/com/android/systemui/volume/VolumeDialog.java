@@ -31,6 +31,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PixelFormat;
+import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.ColorDrawable;
@@ -152,7 +153,7 @@ public class VolumeDialog implements TunerService.Tunable {
         mKeyguard = (KeyguardManager) context.getSystemService(Context.KEYGUARD_SERVICE);
         mAudioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
         mAccessibilityMgr = (AccessibilityManager) mContext.getSystemService(Context.ACCESSIBILITY_SERVICE);
-        mActiveSliderTint = loadColorStateList(R.color.system_accent_color);
+        mActiveSliderTint = loadColorStateList(R.color.volume_slider_active);
         mInactiveSliderTint = loadColorStateList(R.color.volume_slider_inactive);
 
         initDialog();
@@ -395,6 +396,8 @@ public class VolumeDialog implements TunerService.Tunable {
         row.header = (TextView) row.view.findViewById(R.id.volume_row_header);
         mSpTexts.add(row.header);
         row.slider = (SeekBar) row.view.findViewById(R.id.volume_row_slider);
+        row.slider.setProgressTintMode(PorterDuff.Mode.SRC_ATOP);
+        row.slider.setThumbTintMode(PorterDuff.Mode.SRC_ATOP);
         row.slider.setOnSeekBarChangeListener(new VolumeSeekBarChangeListener(row));
         row.anim = null;
 
