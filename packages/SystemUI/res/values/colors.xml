@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
- * Copyright 2010, The Android Open Source Project
+ * Copyright 2016, The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -178,4 +178,32 @@
 
     <!-- Background color of edit overflow -->
     <color name="qs_edit_overflow_bg">#455A64</color>
+
+<!-- Exposed hard coded colors -->
+    <color name="toggle_slider_text_color">#666666</color>
+    <color name="no_recent_apps_text_color">@android:color/holo_blue_light</color>
+    <color name="no_notifications_text_color">#ffffff</color>
+    <color name="keyguard_overflow_number_text_color">#ff686868</color>
+    <color name="keyguard_carrier_text_color">#ffffff</color>
+    <color name="screen_pinning_description_text_color">@android:color/white</color>
+    <color name="screen_pinning_cancel_button_text_color">@android:color/white</color>
+    <color name="recents_empty_message_text_color">#ffffffff</color>
+    <color name="recents_search_bar_label_text_color">#99ffffff</color>
+    <color name="mland_scorefield_text_color">#FFAAAAAA</color>
+    <color name="keyguard_indication_text_color">#ffffff</color>
+    <color name="quick_settings_panel_background">#0000</color>
+    <color name="play_button_image_tint_color">#000000</color>
+    <color name="zen_ic_close_tint_color">@android:color/white</color>
+    <color name="header_debug_info_text_color">#00A040</color>
+    <color name="camera_button_icon_tint">#ffffffff</color>
+    <color name="phone_button_icon_tint">#ffffffff</color>
+
+    <!-- Expanded Status Bar Alarm Status Text Color -->
+    <color name="status_bar_alarm_status_text_color">#64ffffff</color>
+
+    <!-- Expanded Status Bar Battery Level Text Color -->
+    <color name="status_bar_battery_level_text_color">#ffffff</color>
+
+    <!-- SystemUI Tuner Icon Tint Color -->
+    <color name="tuner_icon_tint">#4dffffff</color>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-** Copyright 2012, The Android Open Source Project
+** Copyright 2016, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License"); 
 ** you may not use this file except in compliance with the License. 
@@ -61,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingStart="36dp"
-            android:tint="#4DFFFFFF"
+            android:tint="@color/tuner_icon_tint"
             android:tintMode="src_in"
             android:visibility="invisible"
             android:src="@drawable/tuner" />
@@ -89,7 +89,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/header_battery_margin_expanded"
             android:paddingEnd="@dimen/battery_level_padding_end"
-            android:textColor="#ffffff"
+            android:textColor="@color/status_bar_battery_level_text_color"
             android:textSize="@dimen/battery_level_text_size"
             android:importantForAccessibility="noHideDescendants"/>
     </LinearLayout>
@@ -151,7 +151,7 @@
         android:layout_marginBottom="4dp"
         android:drawablePadding="6dp"
         android:drawableStart="@drawable/ic_access_alarms_small"
-        android:textColor="#64ffffff"
+        android:textColor="@color/status_bar_alarm_status_text_color"
         android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Date"
         android:paddingEnd="6dp"
         android:paddingStart="6dp"
@@ -188,7 +188,7 @@
         android:fontFamily="sans-serif-condensed"
         android:textSize="11dp"
         android:textStyle="bold"
-        android:textColor="#00A040"
+        android:textColor="@color/header_debug_info_text_color"
         android:padding="2dp"
         />
 

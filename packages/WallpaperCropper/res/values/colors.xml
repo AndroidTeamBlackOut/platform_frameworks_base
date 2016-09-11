@@ -14,16 +14,6 @@
      limitations under the License.
 -->
 
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:paddingStart="16dip"
-    android:paddingEnd="16dip"
-    android:paddingTop="8dip"
-    android:paddingBottom="8dip"
-    android:gravity="center"
-    android:textAppearance="?android:attr/textAppearanceSmallInverse"
-    android:textColor="@color/edit_action_popup_text_color"
-    android:textAllCaps="true"
-    android:textStyle="bold"
-/>
+<resources>
+    <color name="set_wallpaper_text_color">@android:color/white</color>
+</resources>
